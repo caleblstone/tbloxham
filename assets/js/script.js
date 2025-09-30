@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         text = text.replace(/-/g, " & ");
 
         // Replace underscores with spaces
-        text = text.replace(/_/g, " ");
+        text = text.replace(/socialmedia/g, "Social Media");
 
         // Capitalize first letter of each word
         text = text.replace(/\b\w/g, char => char.toUpperCase());

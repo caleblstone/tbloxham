@@ -58,9 +58,9 @@ collections:
       - { label: "dateString", name: "Year", widget: "string", required: false}
       - { label: "Image", name: "image", widget: "image", required: false }
       - { label: "Video", name: "video", widget: "string", required: false}
-  - name: "social_media"
+  - name: "socialmedia"
     label: "Social Media"
-    folder: "contentFolder/_social_media"
+    folder: "contentFolder/_socialmedia"
     create: true
     slug: "Social-Media-{{order}}-{{slug}}"
     fields:
