@@ -32,6 +32,8 @@ collections:
       - { label: "Title", name: "title", widget: "string", required: false }
       - { label: "Client", name: "client", widget: "string", required: false }
       - { label: "dateString", name: "Year", widget: "string", required: false}
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Video", name: "video", widget: "string", required: false}
   - name: "travel-wildlife"
     label: "Travel & Wildlife"
     folder: "contentFolder/_travel-wildlife"
@@ -42,6 +44,8 @@ collections:
       - { label: "Title", name: "title", widget: "string", required: false }
       - { label: "Client", name: "client", widget: "string", required: false }
       - { label: "dateString", name: "Year", widget: "string", required: false}
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Video", name: "video", widget: "string", required: false}
   - name: "television"
     label: "Television"
     folder: "contentFolder/_television"
@@ -52,6 +56,8 @@ collections:
       - { label: "Title", name: "title", widget: "string", required: false }
       - { label: "Client", name: "client", widget: "string", required: false }
       - { label: "dateString", name: "Year", widget: "string", required: false}
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Video", name: "video", widget: "string", required: false}
   - name: "social_media"
     label: "Social Media"
     folder: "contentFolder/_social_media"
@@ -62,6 +68,8 @@ collections:
       - { label: "Title", name: "title", widget: "string", required: false }
       - { label: "Client", name: "client", widget: "string", required: false }
       - { label: "dateString", name: "Year", widget: "string", required: false}
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Video", name: "video", widget: "string", required: false}
   - name: "hospitality"
     label: "Hospitality"
     folder: "contentFolder/_hospitality"
@@ -72,6 +80,8 @@ collections:
       - { label: "Title", name: "title", widget: "string", required: false }
       - { label: "Client", name: "client", widget: "string", required: false }
       - { label: "dateString", name: "Year", widget: "string", required: false}
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Video", name: "video", widget: "string", required: false}
   - name: "event"
     label: "Event"
     folder: "contentFolder/_event"
@@ -82,6 +92,8 @@ collections:
       - { label: "Title", name: "title", widget: "string", required: false }
       - { label: "Client", name: "client", widget: "string", required: false }
       - { label: "dateString", name: "Year", widget: "string", required: false}
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Video", name: "video", widget: "string", required: false}
   - name: "sports"
     label: "Sports"
     folder: "contentFolder/_sports"
@@ -92,3 +104,5 @@ collections:
       - { label: "Title", name: "title", widget: "string", required: false }
       - { label: "Client", name: "client", widget: "string", required: false }
       - { label: "dateString", name: "Year", widget: "string", required: false}
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Video", name: "video", widget: "string", required: false}

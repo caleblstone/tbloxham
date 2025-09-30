@@ -51,6 +51,7 @@ body{
     #index{
         display: flex;
         flex-direction: column;
+        
 
         div{
             margin-top: 24px;
@@ -62,6 +63,7 @@ body{
             color: #E08C17;  
         }
         #indexLinks{
+            margin-left: 8px;
            
             a{
                 text-decoration: none;
@@ -98,9 +100,95 @@ body{
             max-height: 90vh;
             display: block
         }
+        iframe{
+            width: 48vw;
+            height: 27vw;
+        }
+
         .textBox{
             margin-left: 16px;
             width: 30vw;
         }
     }
+}
+
+
+@media (max-width: 800px) {
+  html, body {
+    font-size: 16px;
+  }
+
+  body {
+    display: block;
+    padding: 0;
+  }
+
+  #leftBar {
+    width: calc(100vw - 16px);
+    height: calc(100vh - 16px);
+    border-right: none;
+    border-bottom: 2px solid #E08C17;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 8px;
+    margin: 0;
+  }
+
+  #downArrow {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    line-height: 1;
+    font-size: 16px;
+    color: #E08C17;
+    animation: bounce 2s infinite;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  #mainContent {
+    padding: 8px;
+    height: auto;
+    overflow-y: visible;
+
+    #blurb {
+      width: 100%;
+    }
+
+    .post {
+      flex-direction: column;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        max-height: 90vh;
+      }
+      iframe {
+        width: calc(100vw - 16px);
+        height: 30vh;
+      }
+
+      .textBox {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 8px;
+      }
+    }
+  }
+
+  #index {
+    flex-direction: column;
+    width: 100%;
+    
+    div {
+      margin-top: 12px;
+      
+      
+    }
+  }
+
+  #indexLinks a span {
+    left: -12px !important;
+  }
 }
