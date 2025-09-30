@@ -7,6 +7,10 @@
          url('/assets/fonts/social.woff') format('woff');
 }
 
+#downArrow{
+    display: none;
+}
+
 html, body{
     margin: 0px;
     padding: 0px;
@@ -187,7 +191,9 @@ body{
       
     }
   }
-
+  #downArrow{
+    display: block;
+  }
   #indexLinks a span {
     left: -12px !important;
   }
