@@ -1,0 +1,94 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+
+media_library:
+  name: uploadcare
+  config:
+    publicKey: fbb66349001efbc7e5ce
+    multiple: true
+  settings:
+    defaultOperations: 
+
+collections:
+  - name: "bio"
+    label: "Bio" 
+    folder: "contentFolder/_bio"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", default: "" }
+      - { label: "Category", name: "category", widget: "string", default: "bio" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "corporate-startup"
+    label: "Corpotate & Startup" 
+    folder: "contentFolder/_corporate-startup"
+    create: true
+    slug: "Corporate-Startup-{{order}}-{{slug}}"
+    fields:
+      - { label: "Order", name: "order", widget: "number", required: true }
+      - { label: "Title", name: "title", widget: "string", required: false }
+      - { label: "Client", name: "client", widget: "string", required: false }
+      - { label: "dateString", name: "Year", widget: "string", required: false}
+  - name: "travel-wildlife"
+    label: "Travel & Wildlife"
+    folder: "contentFolder/_travel-wildlife"
+    create: true
+    slug: "Travel-Wildlife-{{order}}-{{slug}}"
+    fields:
+      - { label: "Order", name: "order", widget: "number", required: true }
+      - { label: "Title", name: "title", widget: "string", required: false }
+      - { label: "Client", name: "client", widget: "string", required: false }
+      - { label: "dateString", name: "Year", widget: "string", required: false}
+  - name: "television"
+    label: "Television"
+    folder: "contentFolder/_television"
+    create: true
+    slug: "Television-{{order}}-{{slug}}"
+    fields:
+      - { label: "Order", name: "order", widget: "number", required: true }
+      - { label: "Title", name: "title", widget: "string", required: false }
+      - { label: "Client", name: "client", widget: "string", required: false }
+      - { label: "dateString", name: "Year", widget: "string", required: false}
+  - name: "social_media"
+    label: "Social Media"
+    folder: "contentFolder/_social_media"
+    create: true
+    slug: "Social-Media-{{order}}-{{slug}}"
+    fields:
+      - { label: "Order", name: "order", widget: "number", required: true }
+      - { label: "Title", name: "title", widget: "string", required: false }
+      - { label: "Client", name: "client", widget: "string", required: false }
+      - { label: "dateString", name: "Year", widget: "string", required: false}
+  - name: "hospitality"
+    label: "Hospitality"
+    folder: "contentFolder/_hospitality"
+    create: true
+    slug: "Hospitality-{{order}}-{{slug}}"
+    fields:
+      - { label: "Order", name: "order", widget: "number", required: true }
+      - { label: "Title", name: "title", widget: "string", required: false }
+      - { label: "Client", name: "client", widget: "string", required: false }
+      - { label: "dateString", name: "Year", widget: "string", required: false}
+  - name: "event"
+    label: "Event"
+    folder: "contentFolder/_event"
+    create: true
+    slug: "Event-{{order}}-{{slug}}"
+    fields:
+      - { label: "Order", name: "order", widget: "number", required: true }
+      - { label: "Title", name: "title", widget: "string", required: false }
+      - { label: "Client", name: "client", widget: "string", required: false }
+      - { label: "dateString", name: "Year", widget: "string", required: false}
+  - name: "sports"
+    label: "Sports"
+    folder: "contentFolder/_sports"
+    create: true
+    slug: "Sports-{{order}}-{{slug}}"
+    fields:
+      - { label: "Order", name: "order", widget: "number", required: true }
+      - { label: "Title", name: "title", widget: "string", required: false }
+      - { label: "Client", name: "client", widget: "string", required: false }
+      - { label: "dateString", name: "Year", widget: "string", required: false}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <title>Thomas Bloxham</title>
+    {% seo %}
+</head>
+<body>
+    <div id="leftBar">
+        <div id="nameBio">
+            {% for post in site.bio reversed | sort: "order" %}
+                {{ post.content }}
+            {% endfor %}
+        </div>
+
+        <div id="index">
+            <div id="indexTitle">
+                Index
+            </div>
+            <div id="indexLinks">
+                {% for collection in site.collections %}
+                <a href="/{{ collection.label | slugify }}/">{{ collection.label }}</a><br>
+                {% endfor %} 
+            </div>
+
+            <div id="contact">
+                Contact 
+            </div>
+
+        </div>
+
+
+
+   </div>
+   <div id="mainContent">
+        <div id="pageName">
+            {{ page.title }}
+        </div>
+
+        {% for post in site.[page.category] reversed | sort: "order" %}
+            <div id="blurb">
+                {{ post.content }}
+            </div>
+        {% endfor %}
+
+        {% for post in site.[page.category] | sort: "order" %}
+            <div class="post">
+                <div class="imageBox">
+                    {% if post.image %}
+                        <img src="{{ post.image }}" alt="{{ post.title }}">
+                    {% endif %}
+                </div>
+
+                <div class="textBox">
+                    <div class="title">{{ post.title }}</div>
+                    <div class="client">{{ post.client }}</div>
+                    <div class="year">{{ post.year }}</div>
+
+                </div>
+            </div>
+        {% endfor %}
+
+
+ 
+   </div>
+
+   <script src="/assets/js/script.js"></script>
+</body>
+</html>

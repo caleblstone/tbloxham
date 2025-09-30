@@ -1,0 +1,106 @@
+---
+---
+
+@font-face {
+    font-family: 'social';
+    src: url('/assets/fonts/social.woff2') format('woff2'),
+         url('/assets/fonts/social.woff') format('woff');
+}
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'social';
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+body{
+    background-color: #FEFDF9;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    
+}
+
+#leftBar{
+    width: calc(20vw - 32px);
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: calc(100vh - 32px);
+    overflow: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-right: 2px solid #E08C17;
+
+    em{
+        color:#E08C17;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    p {
+        margin-top: 0px;
+    }
+
+    #index{
+        display: flex;
+        flex-direction: column;
+
+        div{
+            margin-top: 24px;
+        }
+
+
+        #indexTitle{
+            text-decoration: underline;
+            color: #E08C17;  
+        }
+        #indexLinks{
+           
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            a:hover{
+                text-decoration: underline;
+                color: #E08C17;  
+            }
+        }
+    }
+}
+#mainContent{
+    padding: 16px;
+    height: calc(100vh - 32px);
+    overflow-y: scroll;
+
+    #pageName{
+        text-decoration: underline;
+            color: #E08C17;  
+    }
+
+    #blurb{
+        width: 60%;
+    }
+
+    .post{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 16px;
+        
+        img{
+            max-width: 100%;
+            max-height: 90vh;
+            display: block
+        }
+        .textBox{
+            margin-left: 16px;
+            width: 30vw;
+        }
+    }
+}
