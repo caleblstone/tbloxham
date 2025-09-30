@@ -125,7 +125,7 @@ body{
 
   #leftBar {
     width: calc(100vw - 16px);
-    height: calc(100vh - 16px);
+    height: calc(100dvh - 16px);
     border-right: none;
     border-bottom: 2px solid #E08C17;
     flex-direction: column;
